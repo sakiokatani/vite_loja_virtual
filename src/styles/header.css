@@ -1,0 +1,30 @@
+.header-container-flex{
+    display: flex;
+    height: 60px;
+    width: 100vw;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px;
+}
+
+.logo-wrapper{
+    color: aliceblue;
+    font-size: 3em;
+    font-family: var(--roboto);
+}
+
+.header-menu-wrapper{
+    margin-top: 2em;
+    color: aliceblue;
+    font-size: 1em;
+    font-family: var(--roboto);
+}
+
+.header-menu-wrapper a{
+    padding: 16px;
+}
