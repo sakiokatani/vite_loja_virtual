@@ -13,7 +13,10 @@ const Banner=()=>{
         <div class="banner-container-flex">
             <div class="banner-text-wrapper">
                 <h3>{banner.slogan}</h3>
-                <h1 class="Title'">{banner.pageTitle}</h1><h1 class="decoration">{banner.decoration}</h1>
+            </div>
+            <div class= "banner-title-wrapper">
+                <h1 class="page-title">{banner.pageTitle}</h1>
+                <h1 class="decoration">{banner.decoration}</h1>
             </div>
         </div>
     )

@@ -2,15 +2,17 @@
 
 .banner-container-flex{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 175px;
     width: 100vw;
     background-color: rgb(17, 17, 17);
 }
 
 .banner-text-wrapper{
+    display: flex;
+    flex-direction: row;
     width: 100vw;
-    height: 100px;
+    height: 20px;
     margin-top: 0px;
     padding: 20px;
     color: white;
@@ -21,16 +23,25 @@
     font-weight: 400;
 }
 
-.banner-text-wrapper h1.Title{
-    display: inline-block;
+.banner-title-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 4em;
+    color: white;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.banner-title-wrapper h1.page-title{
+    margin-top: 0;
     font-family:var(--poppins);
     font-weight: 500;
+    font-size: 3em;
+    margin-right: 0.25em;
 }
-.banner-text-wrapper h1.decoration{
-    position: absolute;
-    margin-left: 230px;
-    margin-top: -65px;
-    display: inline-block;
+
+.banner-title-wrapper h1.decoration{
     font-family:var(--poppins);
     font-weight: 700;
     color: rgb(255, 238, 0);
