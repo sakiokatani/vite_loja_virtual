@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import headerStyle from '../styles/header.css'
+import '../styles/header.css'
 
 const Header =({name, menubtn1, menubtn2, menubtn3})=>{
 
@@ -11,14 +11,14 @@ const Header =({name, menubtn1, menubtn2, menubtn3})=>{
         menubtn3:"FAQ",
     }
     return(
-        <div class="header-container-flex">
-            <div class="logo-wrapper">
-                <a class="company-link">{header.name}</a>
+        <div className="header-container-flex">
+            <div className="logo-wrapper">
+                <a className="company-link">{header.name}</a>
             </div>
-            <div class="header-menu-wrapper">
-                <a class="header-menu">{header.menubtn1}</a>
-                <a class="header-menu">{header.menubtn2}</a>
-                <a class="header-menu">{header.menubtn3}</a>
+            <div className="header-menu-wrapper">
+                <a className="header-menu">{header.menubtn1}</a>
+                <a className="header-menu">{header.menubtn2}</a>
+                <a className="header-menu">{header.menubtn3}</a>
             </div>
         </div>
     )
@@ -26,9 +26,9 @@ const Header =({name, menubtn1, menubtn2, menubtn3})=>{
 
 Header.propTypes={
     name:PropTypes.string.isRequired,
-    menubtn1:PropTypes.string.isRequired,
-    menubtn2:PropTypes.string.isRequired,
-    menubtn3:PropTypes.string.isRequired,
+    menubtn1:PropTypes.string,
+    menubtn2:PropTypes.string,
+    menubtn3:PropTypes.string,
 }
 
 export default Header;

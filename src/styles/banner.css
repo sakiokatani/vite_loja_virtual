@@ -42,7 +42,8 @@
 }
 
 .banner-title-wrapper h1.decoration{
+    margin-bottom:0.01em;
     font-family:var(--poppins);
     font-weight: 700;
-    color: rgb(255, 238, 0);
+    color: var(--main-yellow);
 }

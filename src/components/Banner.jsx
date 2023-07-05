@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import bannerStyle from '../styles/banner.css'
+import '../styles/banner.css'
 
 const Banner=()=>{
     const banner={
@@ -10,21 +10,21 @@ const Banner=()=>{
     }
 
     return(
-        <div class="banner-container-flex">
-            <div class="banner-text-wrapper">
-                <h3>{banner.slogan}</h3>
+        <div className="banner-container-flex">
+            <div className="banner-text-wrapper">
+                <h3>{banner.slogan.toUpperCase()}</h3>
             </div>
-            <div class= "banner-title-wrapper">
-                <h1 class="page-title">{banner.pageTitle}</h1>
-                <h1 class="decoration">{banner.decoration}</h1>
+            <div className= "banner-title-wrapper">
+                <h1 className="page-title">{banner.pageTitle}</h1>
+                <h1 className="decoration">{banner.decoration}</h1>
             </div>
         </div>
     )
 }
 
 Banner.propTypes={
-    slogan: PropTypes.string.isRequired,
-    pageTitle: PropTypes.string.isRequired,
+    slogan: PropTypes.string,
+    pageTitle: PropTypes.string,
     decoration: PropTypes.string,
 }
 

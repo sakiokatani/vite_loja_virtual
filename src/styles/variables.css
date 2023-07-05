@@ -4,5 +4,10 @@
     /*fonts*/
     --roboto: 'Roboto', sans-serif;
     --poppins: 'Poppins', sans-serif;
+
+    /*main colors*/
+    --main-yellow: rgb(255, 238, 0);
+    --hover-yellow:rgb(255, 217, 0);
+    --white:rgb(248, 248, 248);
     
 }
