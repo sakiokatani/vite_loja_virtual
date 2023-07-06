@@ -9,18 +9,20 @@ import Button from './Button'
 
 //import styles
 import '../styles/product_card.css'
+import ProductDetailPage from "./ProductDetailPage";
 
 const ProductCard =({id, name, description, price, image})=>{
     
-     
-  const infoBtn={
-    prop1: "Saiba mais",
-    }
-  const buyBtn={
-    prop1: "Comprar com 1-click",
-  }
+    const infoBtn={
+        label: "Saiba mais",
+        btnID:  "1",
+        }
+      const buyBtn={
+        label: "Comprar com 1-click",
+        btnID: "2",
+      }
 
-  const renderCharacteristics = (id) => {
+  const renderCharacteristics = () => {
     const characteristics = [];
     const foundProduct = ProductData.find((productID) => productID.id === id);
     
@@ -48,7 +50,10 @@ const ProductCard =({id, name, description, price, image})=>{
     };
     }
 
+    
     const Characteristics = renderCharacteristics(id);
+    
+    
 
     return(
         <div className="cardContent-wrapper">
@@ -71,8 +76,8 @@ const ProductCard =({id, name, description, price, image})=>{
                             <h2 id={id}>{price}</h2>
                         </div>
                         <div className="btns-wrapper">
-                            <Button prop1={infoBtn.prop1}/>
-                            <Button prop1={buyBtn.prop1}/>
+                            <Button label={infoBtn.label} btnID={infoBtn.btnID}/>
+                            <Button label={buyBtn.label} btnID={buyBtn.btnID}/>
                         </div>
                         
                     </div>
@@ -81,9 +86,7 @@ const ProductCard =({id, name, description, price, image})=>{
         </div>
     )
 }
-Button.propTypes={
-    prop1: PropTypes.string,
-}
+
 
 ProductCard.popTypes={
     key:PropTypes.number,
