@@ -25,7 +25,7 @@ const Header =({name, menubtn1, menubtn2, menubtn3})=>{
 }
 
 Header.propTypes={
-    name:PropTypes.string.isRequired,
+    name:PropTypes.string,
     menubtn1:PropTypes.string,
     menubtn2:PropTypes.string,
     menubtn3:PropTypes.string,
