@@ -1,0 +1,21 @@
+.menu-principal-footer-wrapper{
+    display: flex;
+    background-color: black;
+    margin-bottom: 0;
+    padding: 20px;
+    height: 20vh;
+    width: 100vw;
+    align-items: center;
+    align-content: center;
+}
+
+
+li.footerLinks{
+    list-style: none;
+}
+
+li.footerLinks a{
+    color: white;
+    font-weight: 600;
+
+}
