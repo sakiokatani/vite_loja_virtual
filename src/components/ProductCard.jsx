@@ -14,13 +14,16 @@ import ProductDetailPage from "./ProductDetailPage";
 const ProductCard =({id, name, description, price, image})=>{
     
     const infoBtn={
+        key: 1,
         label: "Saiba mais",
-        btnID:  "1",
+        btnID:  1,
         }
-      const buyBtn={
+
+    const buyBtn={
+        key: 2,
         label: "Comprar com 1-click",
-        btnID: "2",
-      }
+        btnID: 2,
+    }
 
   const renderCharacteristics = () => {
     const characteristics = [];
@@ -29,16 +32,16 @@ const ProductCard =({id, name, description, price, image})=>{
     if(foundProduct){
 
         if (foundProduct.characteristic1) {
-        characteristics.push(<li>{foundProduct.characteristic1}</li>);
+        characteristics.push(<li key={`${id}-characteristic1`}>{foundProduct.characteristic1}</li>);
         }
         if (foundProduct.characteristic2) {
-        characteristics.push(<li>{foundProduct.characteristic2}</li>);
+        characteristics.push(<li key={`${id}-characteristic2`}>{foundProduct.characteristic2}</li>);
         }
         if (foundProduct.characteristic3) {
-        characteristics.push(<li>{foundProduct.characteristic3}</li>);
+        characteristics.push(<li key={`${id}-characteristic3`}>{foundProduct.characteristic3}</li>);
         }
         if (foundProduct.characteristic4) {
-        characteristics.push(<li>{foundProduct.characteristic4}</li>);
+        characteristics.push(<li key={`${id}-characteristic4`}>{foundProduct.characteristic4}</li>);
         }
     
 

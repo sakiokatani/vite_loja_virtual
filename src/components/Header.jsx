@@ -10,6 +10,7 @@ const Header =({name, menubtn1, menubtn2, menubtn3})=>{
         menubtn2: "Contato",
         menubtn3:"FAQ",
     }
+
     return(
         <div className="header-container-flex">
             <div className="logo-wrapper">
