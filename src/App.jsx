@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react'
+import { Router } from 'react-router-dom'
 import './App.css'
 
 //import Components
 import Header from './components/Header'
 import Banner from './components/Banner'
 import ProductCard from './components/ProductCard'
+import Footer from './components/Footer.jsx'
 
 //importData
 import ProductData from './data/product_data.json'
@@ -14,7 +16,7 @@ import ProductData from './data/product_data.json'
 function App() {
   
   const [data, DataSet] = useState(ProductData);
- 
+  const [banner, setBanner] = useState({ slogan: "", pageTitle: "", decoration: "" });
   
 
   return (
@@ -40,7 +42,9 @@ function App() {
               );
             })}
       </div>
-
+      <div className='footer-container'>
+        <Footer/>
+      </div>
     </div>
   )
 }
